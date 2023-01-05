@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BROTOTYPE | BROTHER YOU NEVER HAD</title>
+
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<nav class="navbar d-flex">
+			<div class="logo d-flex">
+				<img
+					src="./assets/img/icons/main.webp"
+					alt="BROTOTYPE logo"
+					title="Brototype"
+				/>
+			</div>
+			<div class="hamburger-menu" id="hamburger-menu">
+				<div class="toggle-button" onclick="toggleSidebar();">
+					<span class="hamburger-toggler" id="hamburger-toggler"></span>
+				</div>
+				<div class="sidebar p-1" id="sidebar">
+					<div class="logo d-flex mb-1">
+						<img
+							src="./assets/img/icons/main.webp"
+							alt="BROTOTYPE logo"
+							title="Brototype"
+						/>
+					</div>
+					<hr />
+					<div class="sidebar-menu-items mt-2">
+						<li class="sidebar-menu-item mb-2">
+							<a href="#" class="sidebar-menu-link">Home</a>
+						</li>
+						<li class="sidebar-menu-item mb-2">
+							<a href="#" class="sidebar-menu-link">100K coding challenge</a>
+						</li>
+						<li class="sidebar-menu-item mb-2">
+							<a href="#" class="sidebar-menu-link">Brocamp</a>
+						</li>
+						<li class="sidebar-menu-item mb-2">
+							<a href="#" class="sidebar-menu-link">Learning Club</a>
+						</li>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- overlay -->
+		<div class="overlay" id="sidebar-overlay"></div>
+
+		<div class="wrapper">
+			<section class="hero mb-1">
+				<div class="hero_details">
+					<div class="hero_desc">
+						<div class="hero_info">
+							<h1 class="hero_heading">Want to become a Software Engineer?</h1>
+							<p class="hero_info__text">
+								If you know how to read and write in English and have the basic
+								knowledge to do addition, subtraction, multiplication and
+								division; congratulations you too can become a software engineer
+							</p>
+						</div>
+
+						<div class="hero_checker">
+							<h2 class="hero_sub-heading">What's your background?</h2>
+							<div class="hero_checker_checkbox">
+								<div class="radio-item" onclick="checkRadio(this);">
+									<input
+										class="radio-btn"
+										type="radio"
+										name="background"
+										id="IT"
+									/>
+									<label for="IT">I’m from an IT background</label>
+								</div>
+								<div class="radio-item" onclick="checkRadio(this);">
+									<input
+										class="radio-btn"
+										type="radio"
+										name="background"
+										id="nonIT"
+									/>
+									<label for="IT">I’m from non IT background</label>
+								</div>
+								<div class="radio-item" onclick="checkRadio(this);">
+									<input
+										type="radio"
+										class="radio-btn"
+										name="background"
+										id="dropout"
+									/>
+									<label for="IT">I’m a +2 student or dropout</label>
+								</div>
+								<div class="radio-item" onclick="checkRadio(this);">
+									<input
+										type="radio"
+										class="radio-btn"
+										name="background"
+										id="gap"
+									/>
+									<label for="IT">I have a career gap</label>
+								</div>
+							</div>
+							<div class="hero_action">
+								<p id="placedInfo"></p>
+								<button class="btn-main rounded-50">
+									Show me a Career Path
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="msg text-center mb-3">
+				<p>
+					In the last 3.5 years we have helped over <br />
+					<span>1000s of</span> people from different backgrounds to build their
+					career as
+					<br />
+					<span>software engineers</span>
+				</p>
+			</section>
+
+			<hr class="w-55 ma mt-1" />
+
+			<section class="stories pb-2">
+				<div class="card-grid mt-2">
+					<div class="grid-item g1">
+						<p>Success <span>Stories</span></p>
+						<sub>From the Brocamp</sub>
+					</div>
+					<div class="grid-item g2"></div>
+					<div class="grid-item g3"></div>
+					<div class="grid-item g4"></div>
+					<div class="grid-item g5"></div>
+
+					<div class="grid-item 4">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="none"
+								playsinline=""
+								poster="https://brototype.com/successStories-thumbnails/637209d81445df831a8f4d86TN.webp"
+								onplay="setPlayer(this)"
+								onclick="playVideo(this)"
+								onmouseover="showControls(this,true)"
+								onmouseout="showControls(this,false)"
+							>
+								<source
+									src="https://brototype.com/uploads/637209d81445df831a8f4d86Video.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 2">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="none"
+								playsinline=""
+								poster="https://brototype.com/successStories-thumbnails/63720e101445df831a8f4d87TN.webp"
+								onplay="setPlayer(this)"
+								onclick="playVideo(this)"
+								onmouseover="showControls(this,true)"
+								onmouseout="showControls(this,false)"
+							>
+								<source
+									src="https://brototype.com/uploads/63720e101445df831a8f4d87Video.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 5">
+						<div class="thumbnail">
+							<video
+								muted=""
+								playsinline=""
+								poster="https://brototype.com/successStories-thumbnails/637221491445df831a8f4d90TN.webp"
+								onplay="setPlayer(this)"
+								onclick="playVideo(this)"
+								onmouseover="showControls(this,true)"
+								onmouseout="showControls(this,false)"
+							>
+								<source
+									src="https://brototype.com/uploads/637221491445df831a8f4d90Video.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 1">
+						<div class="thumbnail">
+							<video
+								muted=""
+								playsinline=""
+								poster="https://brototype.com/successStories-thumbnails/637221491445df831a8f4d91TN.webp"
+								onplay="setPlayer(this)"
+								onclick="playVideo(this)"
+								onmouseover="showControls(this,true)"
+								onmouseout="showControls(this,false)"
+								autoplay=""
+							>
+								<source
+									src="https://brototype.com/uploads/637221491445df831a8f4d91Video.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 3">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="none"
+								playsinline=""
+								poster="https://brototype.com/successStories-thumbnails/637221491445df831a8f4d92TN.webp"
+								onplay="setPlayer(this)"
+								onclick="playVideo(this)"
+								onmouseover="showControls(this,true)"
+								onmouseout="showControls(this,false)"
+							>
+								<source
+									src="https://brototype.com/uploads/637221491445df831a8f4d92Video.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 9">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="none"
+								playsinline=""
+								poster="https://brototype.com/successStories-thumbnails/6372214a1445df831a8f4d93TN.webp"
+								onplay="setPlayer(this)"
+								onclick="playVideo(this)"
+								onmouseover="showControls(this,true)"
+								onmouseout="showControls(this,false)"
+							>
+								<source
+									src="https://brototype.com/uploads/6372214a1445df831a8f4d93Video.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 7">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="none"
+								playsinline=""
+								poster="https://brototype.com/successStories-thumbnails/6372214a1445df831a8f4d95TN.webp"
+								onplay="setPlayer(this)"
+								onclick="playVideo(this)"
+								onmouseover="showControls(this,true)"
+								onmouseout="showControls(this,false)"
+							>
+								<source
+									src="https://brototype.com/uploads/6372214a1445df831a8f4d95Video.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 10">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="none"
+								playsinline=""
+								poster="https://brototype.com/successStories-thumbnails/6372214a1445df831a8f4d94TN.webp"
+								onplay="setPlayer(this)"
+								onclick="playVideo(this)"
+								onmouseover="showControls(this,true)"
+								onmouseout="showControls(this,false)"
+							>
+								<source
+									src="https://brototype.com/uploads/6372214a1445df831a8f4d94Video.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 6">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="none"
+								playsinline=""
+								poster="https://brototype.com/successStories-thumbnails/6372214a1445df831a8f4d96TN.webp"
+								onplay="setPlayer(this)"
+								onclick="playVideo(this)"
+								onmouseover="showControls(this,true)"
+								onmouseout="showControls(this,false)"
+							>
+								<source
+									src="https://brototype.com/uploads/6372214a1445df831a8f4d96Video.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 8">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="none"
+								playsinline=""
+								poster="https://brototype.com/successStories-thumbnails/6372214a1445df831a8f4d97TN.webp"
+								onplay="setPlayer(this)"
+								onclick="playVideo(this)"
+								onmouseover="showControls(this,true)"
+								onmouseout="showControls(this,false)"
+							>
+								<source
+									src="https://brototype.com/uploads/6372214a1445df831a8f4d97Video.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+				</div>
+				<div class="show-more d-flex mb-5">
+					<button class="btn-secondary ma w-17">Show more</button>
+				</div>
+			</section>
+
+			<section class="start-learning d-flex pt-2 pb-2">
+				<div class="heading-container pt-4 w-60 py-1 text-center">
+					<h1 class="heading">
+						Are you planning to start building your career as a
+						<span>software engineer</span>?
+					</h1>
+				</div>
+				<iframe class="pt-5" src="https://www.youtube.com/embed/aYgQ1wmmXlI">
+				</iframe>
+
+				<h2 class="sub-heading pt-3 pb-2">
+					We have <span>2 surprises</span> for you.
+				</h2>
+				<div class="surprise d-flex w-60 py-1 pb-3">
+					<div class="s1 d-flex px-1">
+						<div class="icon">
+							<img src="./assets/img/icons/icon-check.svg" alt="" srcset="" />
+						</div>
+						<p>
+							Our study materials worth more than <span>₹2 Lakhs</span> are
+							<span>100% FREE</span> of cost
+						</p>
+					</div>
+					<div class="s2 d-flex">
+						<div class="icon">
+							<img src="./assets/img/icons/icon-check.svg" alt="" srcset="" />
+						</div>
+						<p>
+							Get 24x7 doubt clearance support worth <span>₹3000</span> is
+							<span>FREE for 30 days</span>
+						</p>
+					</div>
+				</div>
+				<div class="start-learning-now d-flex mb-2 w-100">
+					<button class="btn-secondary ma w-25">Start Learning Now</button>
+				</div>
+			</section>
+
+			<section class="something-more d-flex w-100 pt-2 pb-2">
+				<div class="heading-container pt-4 w-50 py-1 text-center my-3">
+					<h1 class="heading mb-3">
+						Are you looking for <br /><span>SOMETHING MORE</span>??
+					</h1>
+
+					<p class="prolouge my-4">
+						Whatever your past may be, if you are willing to work hard to
+						<span>change your future</span> ; We have
+						<span class="red">BROCAMP</span> for you.
+					</p>
+				</div>
+				<iframe class="pt-5" src="https://www.youtube.com/embed/aYgQ1wmmXlI">
+				</iframe>
+
+				<div class="bro_info d-flex w-60 py-1 pb-3 mb-3 pt-5">
+					<div class="col-1 pt-1 px-1 w-100">
+						<div class="sub-col-1 d-flex pb-1 pt-1">
+							<div class="number">
+								<p>413</p>
+							</div>
+							<div class="bro_info__details">
+								<p>
+									Students placed with an average salary package of
+									<br />
+									<span class="strong">₹ 45,000</span>/month
+								</p>
+							</div>
+						</div>
+						<div class="statistics d-flex">
+							<div class="it text-center">
+								<div class="count strong">71.2%</div>
+								<p>Students from IT background</p>
+							</div>
+							<div class="non-it text-center bl br">
+								<div class="count strong">71.2%</div>
+								<p>Students from IT background</p>
+							</div>
+							<div class="dropout text-center">
+								<div class="count strong">71.2%</div>
+								<p>Students from IT background</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-2 px-1 w-100">
+						<p>
+							<span class="red">Brocamp</span> is a 6 months intensive inhouse
+							training program exclusively for people who are willing to do the
+							hard work to build a high paying software engineering career.
+						</p>
+					</div>
+				</div>
+				<div class="start-learning-now d-flex mb-2 w-100">
+					<button class="btn-secondary ma w-25">Know More About Brocamp</button>
+				</div>
+			</section>
+
+			<hr class="w-55 ma mt-5" />
+
+			<section class="stories pb-2">
+				<div class="heading text-center w-80 ma pt-5">
+					<span class="red">People just like you</span> who had joined Brocamp
+					and changed their life
+				</div>
+				<div class="card-grid mt-2">
+					<div class="grid-item g1">
+						<p>Our <span>Alumini</span></p>
+						<sub>From the Brocamp</sub>
+					</div>
+					<div class="grid-item g2"></div>
+					<div class="grid-item g3"></div>
+					<div class="grid-item g4"></div>
+					<div class="grid-item g5"></div>
+
+					<div class="grid-item 4">
+						<img src="./assets/img/4.jpeg" alt="" srcset="" />
+						<h3 class="card-caption pt-1 pb-1">Akhil Tilak</h3>
+					</div>
+
+					<div class="grid-item 2">
+						<img src="./assets/img/2.jpeg" alt="" srcset="" />
+						<h3 class="card-caption pt-1 pb-1">Bishr Mubarak</h3>
+					</div>
+
+					<div class="grid-item 5">
+						<img src="./assets/img/5.jpeg" alt="" srcset="" />
+						<h3 class="card-caption pt-1 pb-1">Salnish S Kumar</h3>
+					</div>
+
+					<div class="grid-item 1">
+						<img src="./assets/img/1.jpeg" alt="" srcset="" />
+						<h3 class="card-caption pt-1 pb-1">Gokuldas k</h3>
+					</div>
+
+					<div class="grid-item 3">
+						<img src="./assets/img/3.jpeg" alt="" srcset="" />
+						<h3 class="card-caption pt-1 pb-1">Abhay Krishna K K</h3>
+					</div>
+
+					<div class="grid-item 9">
+						<img src="./assets/img/9.jpeg" alt="" srcset="" />
+						<h3 class="card-caption pt-1 pb-1">Amal Thomas Thettayil</h3>
+					</div>
+
+					<div class="grid-item 7">
+						<img src="./assets/img/7.jpeg" alt="" srcset="" />
+						<h3 class="card-caption pt-1 pb-1">Ameen D V</h3>
+					</div>
+
+					<div class="grid-item 10">
+						<img src="./assets/img/10.jpeg" alt="" srcset="" />
+						<h2 class="card-caption pt-1 pb-1">Shabanas P B</h2>
+					</div>
+
+					<div class="grid-item 6">
+						<img src="./assets/img/6.jpeg" alt="" srcset="" />
+						<h3 class="card-caption pt-1 pb-1">Nishada KP</h3>
+					</div>
+
+					<div class="grid-item 8">
+						<img src="./assets/img/8.jpeg" alt="" srcset="" />
+						<h3 class="card-caption pt-1 pb-1">Muhammed Shiyahudheen</h3>
+					</div>
+				</div>
+				<div class="show-more d-flex mb-5">
+					<button class="btn-secondary ma w-17">Show more</button>
+				</div>
+			</section>
+
+			<section class="contact d-flex ma w-60 pt-5 pb-5 bg-light">
+				<div class="text-center w-80 ma">
+					<h2 class="sub-heading mb-2">
+						Want to know more about
+						<br />
+						<span class="red">Brocamp?</span>
+					</h2>
+				</div>
+				<div class="form-holder w-60 ma mb-3">
+					<p class="mb-2">Talk to our team</p>
+					<form action="" class="contact-form d-flex">
+						<div class="col-6 w-50">
+							<label for="name">Name</label> <br />
+							<input type="text" name="name" id="" />
+						</div>
+
+						<div class="col-6 w-50">
+							<label for="number">Contact Number</label> <br />
+							<input type="text" name="number" id="" />
+						</div>
+					</form>
+				</div>
+				<div class="talk-to-us d-flex mb-3 w-100">
+					<button class="btn-main ma w-25">Talk to our career expert</button>
+				</div>
+
+				<a href="#" class="link">I want to know more</a>
+			</section>
+
+			<section class="video-section mb-3">
+				<div class="sub-heading text-center w-60 ma mb-3 pt-5 text-light">
+					Want to know how people just like you
+					<span class="red">transformed</span> their career?
+				</div>
+				<div class="video-holder">
+					<div class="item">
+						<iframe
+							src="https://www.youtube.com/embed/E-_4l9di_5Y?playsinline=1&enablejsapi=1"
+							frameborder="0"
+						></iframe>
+						<h3 class="title mt-1 mb-1">
+							Mobile Shopkeeper Becomes Software Engineer from Brocamp | Adarsh
+							Raj
+						</h3>
+					</div>
+
+					<div class="item">
+						<iframe
+							src="https://www.youtube.com/embed/6DFDpS4jivw"
+							frameborder="0"
+						></iframe>
+						<h3 class="title mt-1 mb-1">
+							Housewife to Software Engineer | Story of Shahida | Placed from
+							Brocamp
+						</h3>
+					</div>
+
+					<div class="item">
+						<iframe
+							src="https://www.youtube.com/embed/ihxPYWtwCYk?playsinline=1&enablejsapi=1"
+							frameborder="0"
+						></iframe>
+						<h3 class="title mt-1 mb-1">
+							Plus Two Student Becomes Software Engineer with 12 LPA | Jobin
+							Selvanose
+						</h3>
+					</div>
+
+					<div class="item">
+						<iframe
+							src="https://www.youtube.com/embed/S241bF17_PU?playsinline=1&enablejsapi=1"
+							frameborder="0"
+						></iframe>
+						<h3 class="title mt-1 mb-1">
+							Fresher becomes Software Engineer for 13 LPA salary
+						</h3>
+					</div>
+
+					<div class="item">
+						<iframe
+							src="https://www.youtube.com/embed/TWGS1wCMLZ8?playsinline=1&enablejsapi=1"
+							frameborder="0"
+						></iframe>
+						<h3 class="title mt-1 mb-1">
+							Degree Failed | Placed for ₹8 LPA from Brocamp
+						</h3>
+					</div>
+
+					<div class="item">
+						<iframe
+							src="https://www.youtube.com/embed/W6-wPWI1EGY?playsinline=1&enablejsapi=1"
+							frameborder="0"
+						></iframe>
+						<h3 class="title mt-1 mb-1">Plus Two (+2) Students Must Watch</h3>
+					</div>
+				</div>
+			</section>
+
+			<hr class="w-55 ma mt-5" />
+
+			<section class="stories pb-2">
+				<div class="sub-heading text-center w-60 ma pt-5 text-light">
+					Want to take a sneak peek into our <span class="red">events</span>?
+				</div>
+				<div class="card-grid mt-2">
+					<div class="grid-item g1">
+						<p>Our <span>Events</span></p>
+						<sub>From the Brocamp</sub>
+					</div>
+					<div class="grid-item g2"></div>
+					<div class="grid-item g3"></div>
+					<div class="grid-item g4"></div>
+					<div class="grid-item g5"></div>
+
+					<div class="grid-item 4">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="none"
+								playsinline=""
+								onplay="setPlayer(this)"
+								onmouseover="showControls(this,true)"
+								onclick="playVideo(this)"
+								onmouseout="showControls(this,false)"
+								poster="https://brototype.com/events-thumbnails/63733e2124980c3769638d04TN.webp"
+							>
+								<source
+									src="https://brototype.com/uploads/events/63733e2124980c3769638d04EventsVideo.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 2">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="auto"
+								playsinline=""
+								onplay="setPlayer(this)"
+								onmouseover="showControls(this,true)"
+								onclick="playVideo(this)"
+								onmouseout="showControls(this,false)"
+								poster="https://brototype.com/events-thumbnails/63733e2224980c3769638d05TN.webp"
+								controls=""
+							>
+								<source
+									src="https://brototype.com/uploads/events/63733e2224980c3769638d05EventsVideo.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 5">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="none"
+								playsinline=""
+								onplay="setPlayer(this)"
+								onmouseover="showControls(this,true)"
+								onclick="playVideo(this)"
+								onmouseout="showControls(this,false)"
+								poster="https://brototype.com/events-thumbnails/63733e2224980c3769638d08TN.webp"
+							>
+								<source
+									src="https://brototype.com/uploads/events/63733e2224980c3769638d08EventsVideo.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 1">
+						<div class="thumbnail">
+							<video
+								muted=""
+								playsinline=""
+								onplay="setPlayer(this)"
+								onmouseover="showControls(this,true)"
+								onclick="playVideo(this)"
+								onmouseout="showControls(this,false)"
+								poster="https://brototype.com/events-thumbnails/63733e2224980c3769638d07TN.webp"
+								autoplay=""
+							>
+								<source
+									src="https://brototype.com/uploads/events/63733e2224980c3769638d07EventsVideo.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 3">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="none"
+								playsinline=""
+								onplay="setPlayer(this)"
+								onmouseover="showControls(this,true)"
+								onclick="playVideo(this)"
+								onmouseout="showControls(this,false)"
+								poster="https://brototype.com/events-thumbnails/63733e2124980c3769638d04TN.webp"
+							>
+								<source
+									src="https://brototype.com/uploads/events/63733e2124980c3769638d04EventsVideo.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 9">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="none"
+								playsinline=""
+								onplay="setPlayer(this)"
+								onmouseover="showControls(this,true)"
+								onclick="playVideo(this)"
+								onmouseout="showControls(this,false)"
+								poster="https://brototype.com/events-thumbnails/63733e2224980c3769638d0cTN.webp"
+							>
+								<source
+									src="https://brototype.com/uploads/events/63733e2224980c3769638d0cEventsVideo.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 7">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="none"
+								playsinline=""
+								onplay="setPlayer(this)"
+								onmouseover="showControls(this,true)"
+								onclick="playVideo(this)"
+								onmouseout="showControls(this,false)"
+								poster="https://brototype.com/events-thumbnails/63733e2224980c3769638d0bTN.webp"
+								controls=""
+							>
+								<source
+									src="https://brototype.com/uploads/events/63733e2224980c3769638d0bEventsVideo.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 10">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="none"
+								playsinline=""
+								onplay="setPlayer(this)"
+								onmouseover="showControls(this,true)"
+								onclick="playVideo(this)"
+								onmouseout="showControls(this,false)"
+								poster="https://brototype.com/events-thumbnails/63733e2324980c3769638d0eTN.webp"
+							>
+								<source
+									src="https://brototype.com/uploads/events/63733e2324980c3769638d0eEventsVideo.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 6">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="none"
+								playsinline=""
+								onplay="setPlayer(this)"
+								onmouseover="showControls(this,true)"
+								onclick="playVideo(this)"
+								onmouseout="showControls(this,false)"
+								poster="https://brototype.com/events-thumbnails/63733e2224980c3769638d09TN.webp"
+							>
+								<source
+									src="https://brototype.com/uploads/events/63733e2224980c3769638d09EventsVideo.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+
+					<div class="grid-item 8">
+						<div class="thumbnail">
+							<video
+								muted=""
+								preload="none"
+								playsinline=""
+								onplay="setPlayer(this)"
+								onmouseover="showControls(this,true)"
+								onclick="playVideo(this)"
+								onmouseout="showControls(this,false)"
+								poster="https://brototype.com/events-thumbnails/63733e2224980c3769638d0dTN.webp"
+							>
+								<source
+									src="https://brototype.com/uploads/events/63733e2224980c3769638d0dEventsVideo.mp4"
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<!-- <img src="https://unsplash.it/360/630" alt="" srcset="" /> -->
+						<h2 class="card-caption pt-1 pb-1">Success Story 1</h2>
+					</div>
+				</div>
+				<div class="show-more d-flex mb-5">
+					<button class="btn-secondary ma w-17">Show more</button>
+				</div>
+			</section>
+
+			<section class="contact d-flex ma w-60 pt-5 pb-5 bg-light">
+				<div class="text-center w-80 ma">
+					<h2 class="sub-heading mb-2">
+						Are you ready to take action to
+						<br />
+						<span class="red">change your life?</span>
+					</h2>
+				</div>
+				<div class="form-holder w-60 ma mb-3">
+					<p class="mb-2">
+						Talk to our career experts to help you find a
+						<br />
+						<span class="strong">suitable career path</span>
+					</p>
+					<form action="" class="contact-form d-flex">
+						<div class="col-6 w-50">
+							<label for="name">Name</label> <br />
+							<input type="text" name="name" id="" />
+						</div>
+
+						<div class="col-6 w-50">
+							<label for="number">Contact Number</label> <br />
+							<input type="text" name="number" id="" />
+						</div>
+					</form>
+				</div>
+				<div class="talk-to-us d-flex mb-3 w-100">
+					<button class="btn-main ma w-25">Talk to our career expert</button>
+				</div>
+
+				<a href="#" class="link">I want to know more</a>
+			</section>
+
+			<section class="director w-80 ma">
+				<div class="sub-heading text-center w-60 ma pt-5 text-light mb-6">
+					Want to connect directly with
+					<span class="red">Nikhil Kilivayil</span>?
+				</div>
+
+				<div class="director_details d-flex w-40 ma">
+					<div class="deirector_img-holder">
+						<img
+							src="https://brototype.com/images/nikhil.webp"
+							alt=""
+							class="circle director-img"
+						/>
+					</div>
+					<div class="director_desc">
+						<h3>Nikhil Kilivayil</h3>
+						<p class="title">Founder & CEO, Brototype</p>
+						<br />
+						<p class="desc">
+							Hi all, if you think there is something that I should know whether
+							it is a concern, query, feedback or whatever please write me
+							directly at ceo@brototype.com or book a personal call with me on
+							getmytym.com
+						</p>
+
+						<hr class="w-80 mt-1 pb-1" />
+
+						<sub class="mt-1"
+							>I will be personally checking this email and try my best to reply
+							to all the emails as my time permits</sub
+						>
+
+						<div class="book-a-call d-flex mb-5 mt-1 w-100">
+							<button class="btn-main w-70 mb-2">Book a call</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<hr class="w-100 mt-1 pb-5" />
+
+			<section class="footer-top w-60 ma">
+				<h3 class="mb-2">Contact Us</h3>
+
+				<span class="mb-2">Brocamp Locations</span>
+
+				<div class="locations mt-2 mb-4">
+					<div class="location_item">
+						<h4 class="mb-1">Kochi (Headquarters)</h4>
+						<p class="address">
+							Carnival Infopark, Infopark Phase 1, Kakkanad P.O, Ernakulam,
+							680219
+						</p>
+					</div>
+
+					<div class="location_item">
+						<h4 class="mb-1">Kozhikode</h4>
+						<p class="address">
+							Kinfra Techno Industrialpark Calicut University PO, Kakkanchery,
+							Kerala 673635
+						</p>
+					</div>
+
+					<div class="location_item">
+						<h4 class="mb-1">Trivandrum</h4>
+						<p class="address">Dotspace, Thiruvananthapuram, Kerala 69500</p>
+					</div>
+
+					<div class="location_item">
+						<h4 class="mb-1">Bengaluru</h4>
+						<p class="address">
+							Hustlehub Tech Park, Sector 2, HSR Layout, Bengaluru, Karnataka
+							560102
+						</p>
+					</div>
+				</div>
+
+				<div class="query_info d-flex mt-3 mb-5">
+					<div class="admission_query px-3 py-1">
+						<h4 class="mb-2">For Admission <span>related queries</span></h4>
+						<div class="d-flex mb-2">
+							<p class="col3 text-muted">Email</p>
+							<span class="col1"> : </span>
+							<a style="color: white" href="mailto:admissions@brototype.com"
+								>admissions@brototype.com</a
+							>
+						</div>
+						<div class="d-flex fab">
+							<p class="col3 text-muted">Contact</p>
+							<span class="col1"> : </span>
+							<div class="mobile-number">
+								<p class="mobile">+91 9995 512 471</p>
+								<p class="mobile">+91 8714 602 027</p>
+							</div>
+						</div>
+					</div>
+					<div class="official_query px-3 py-1">
+						<h4 class="mb-2">For Official <span> queries</span></h4>
+
+						<div class="d-flex mb-2">
+							<p class="col3 text-muted">Email</p>
+							<span class="col1"> : </span>
+							<a style="color: white" href="mailto:talk@brototype.com"
+								>talk@brototype.com</a
+							>
+						</div>
+						<div class="d-flex fab">
+							<p class="col3 text-muted">Contact</p>
+							<span class="col1"> : </span>
+							<div class="mobile-number">
+								<p class="mobile">+91 9061 748 014</p>
+								<p class="mobile">+91 9995 512 471</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer class="d-flex w-100">
+			<div class="acadamy-links">
+				<li><a href="" class="footer-link">About us</a></li>
+				<li><a href="" class="footer-link">Privacy & Terms</a></li>
+				<li><a href="" class="footer-link">Career</a></li>
+			</div>
+			<div class="social">
+				<li><a href="" class="footer-link">Youtube</a></li>
+				<li><a href="" class="footer-link">Instagram</a></li>
+				<li><a href="" class="footer-link">LinkedIn</a></li>
+			</div>
+			<img src="./assets/img/icons/footer-logo.webp" alt="" />
+		</footer>
+
+		<script src="./assets/js/app.js"></script>
+	</body>
+</html>
